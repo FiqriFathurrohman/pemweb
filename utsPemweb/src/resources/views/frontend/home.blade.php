@@ -1,7 +1,7 @@
 @extends('frontend.layouts.app')
 
 @section('content')
-<div class="container text-center mt-5 mb-5">
+<div class="container text-center py-5">
 
   {{-- Judul --}}
   <h1 class="fw-bold mb-3">Selamat Datang di Sistem Beasiswa UEU</h1>
@@ -9,11 +9,11 @@
 
   {{-- Logo --}}
   <div class="mb-4">
-    <img src="{{ asset('front/assets/images/logo.png') }}" alt="Logo Beasiswa" class="img-fluid" style="max-width: 250px;">
+    <img src="{{ asset('front/assets/images/logo.png') }}" alt="Logo UEU" class="img-fluid" style="max-width: 300px;">
   </div>
 
   {{-- Tombol --}}
-  <a href="{{ route('beasiswa') }}" class="btn btn-primary px-4 py-2">
+  <a href="{{ route('beasiswa') }}" class="btn btn-primary px-4 py-2 shadow">
     Lihat Daftar Beasiswa
   </a>
 

@@ -8,11 +8,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
+        {{-- Beranda --}}
         <li class="nav-item">
-          <a class="nav-link {{ request()->is('/') ? 'active fw-semibold' : '' }}" href="{{ route('home') }}">Beranda</a>
+          <a class="nav-link {{ request()->routeIs('home') ? 'active fw-semibold text-primary' : '' }}" href="{{ route('home') }}">
+            Beranda
+          </a>
         </li>
-        {{-- Tambahkan menu lainnya jika diperlukan --}}
-        
+
+        {{-- Beasiswa --}}
+        <li class="nav-item">
+          <a class="nav-link {{ request()->routeIs('beasiswa') ? 'active fw-semibold text-primary' : '' }}" href="{{ route('beasiswa') }}">
+            Beasiswa
+          </a>
+        </li>
       </ul>
     </div>
   </div>
